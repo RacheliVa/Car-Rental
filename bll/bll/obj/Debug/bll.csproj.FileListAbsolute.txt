@@ -1,0 +1,38 @@
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\obj\Debug\bll.csprojResolveAssemblyReference.cache
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\bin\Debug\bll.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\bin\Debug\bll.pdb
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\bin\Debug\dll.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\bin\Debug\DTOcars.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\bin\Debug\EntityFramework.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\bin\Debug\DTOcars.pdb
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\bin\Debug\dll.pdb
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\bin\Debug\EntityFramework.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\obj\Debug\bll.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\bll\bll\obj\Debug\bll.pdb
+D:\בת שבע ורחלי\bll\bll\obj\Debug\bll.csprojResolveAssemblyReference.cache
+D:\בת שבע ורחלי\bll\bll\bin\Debug\bll.dll
+D:\בת שבע ורחלי\bll\bll\bin\Debug\bll.pdb
+D:\בת שבע ורחלי\bll\bll\bin\Debug\dal.dll
+D:\בת שבע ורחלי\bll\bll\bin\Debug\DTOcars.dll
+D:\בת שבע ורחלי\bll\bll\bin\Debug\dal.pdb
+D:\בת שבע ורחלי\bll\bll\bin\Debug\DTOcars.pdb
+D:\בת שבע ורחלי\bll\bll\obj\Debug\bll.dll
+D:\בת שבע ורחלי\bll\bll\obj\Debug\bll.pdb
+E:\פרויקט מעודכן יט תמוז\bll\bll\obj\Debug\bll.csprojResolveAssemblyReference.cache
+E:\פרויקט מעודכן יט תמוז\bll\bll\obj\Debug\bll.dll
+E:\פרויקט מעודכן יט תמוז\bll\bll\obj\Debug\bll.pdb
+E:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\bll.dll
+E:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\bll.pdb
+E:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\dal.dll
+E:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\DTOcars.dll
+E:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\dal.pdb
+E:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\DTOcars.pdb
+F:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\bll.dll
+F:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\bll.pdb
+F:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\dal.dll
+F:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\DTOcars.dll
+F:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\dal.pdb
+F:\פרויקט מעודכן יט תמוז\bll\bll\bin\Debug\DTOcars.pdb
+F:\פרויקט מעודכן יט תמוז\bll\bll\obj\Debug\bll.csprojResolveAssemblyReference.cache
+F:\פרויקט מעודכן יט תמוז\bll\bll\obj\Debug\bll.dll
+F:\פרויקט מעודכן יט תמוז\bll\bll\obj\Debug\bll.pdb

@@ -1,0 +1,160 @@
+
+<h1>Administrator Details</h1>
+<div *ngIf="UserService.currentUser"> 
+<!--כאו יוצגו פרטי משתמש-->
+<app-user-ditails [user]="UserService.currentUser"></app-user-ditails>
+</div>
+
+<!--במידה והמשתמש לא רשום-->
+
+
+<div *ngIf="!UserService.currentUser">
+  <div >
+    <div class="row">
+      <div class="col-md-6">
+      <div class="well">
+      <form (ngSubmit)="formRegister.reset()" #formRegister="ngForm" >
+  
+          <h5>אינך קיים במאגר!! האם ברצונך להרשם??</h5>
+
+          <div class="row-md-12">
+      <div class="form-group">
+      <label  class="control-label">User Name*</label>
+      <!-- בדיקת תקינות לשם משתמש - אותיות בלבד, ושדה חובה -->
+      <input [(ngModel)]="userAdministrator.userName" type="text" name="userName" class="form-control" #Name="ngModel" required pattern="[A-Za-zא-ת ]*"/>
+      <div class="alert-danger" *ngIf="Name.invalid && (Name.dirty || Name.touched)" >
+        <div class="alert-danger" *ngIf="Name.errors.required">שדה חובה</div>
+        <div class="alert-danger" *ngIf="Name.errors.pattern">יש להזין אותיות בלבד</div>
+      </div>
+      </div>
+    </div>
+  
+  
+    <div class="row-md-12">
+      <div class="form-group">
+      <label class="control-label">Password*</label>
+        <!-- בדיקת תקינות לסיסמא - 6 תוים, ושדה חובה -->
+      <input [(ngModel)]="userAdministrator.password" type="password" name="password" class="form-control" #Password="ngModel"  required minlength="6"/>
+      <div class="alert-danger" *ngIf="Password.invalid && (Password.dirty || Password.touched)" >
+        <div class="alert-danger" *ngIf="Password.errors.required">שדה חובה</div>
+        <div class="alert-danger" *ngIf="Password.errors.minlength">יש להכניס לפחות 6 תוים</div>
+      </div>
+      </div>
+     </div>
+  
+  <div class="row-md-12">
+    <div class="form-group">
+        <div class="col-sm-6">
+      <label  class="control-label">First Name*</label>
+      <!-- בדיקת תקינות לשם פרטי - אותיות בלבד, ושדה חובה -->
+      <input [(ngModel)]="userAdministrator.firstName" type="text" name="firstName" class="form-control" #FirstName="ngModel" required minlength="2" pattern="[A-Za-zא-ת ]*"/>
+      <div class="alert-danger" *ngIf="FirstName.invalid && (FirstName.dirty || FirstName.touched)" >
+        <div class="alert-danger" *ngIf="FirstName.errors.required">שדה חובה</div>
+        <div class="alert-danger" *ngIf="FirstName.errors.pattern">יש להזין אותיות בלבד</div>
+      </div>
+      </div>
+    </div>
+  
+      <div class="form-group">
+          <div class="col-sm-6">
+          <label  class="control-label">Last Name*</label>
+          <!-- בדיקת תקינות לשם משפחה - אותיות בלבד, ושדה חובה -->
+          <input [(ngModel)]="userAdministrator.lastName" type="text" name="lastName" class="form-control" #LastName="ngModel" required minlength="2" pattern="[A-Za-zא-ת ]*"/>
+          <div class="alert-danger" *ngIf="LastName.invalid && (LastName.dirty || LastName.touched)" >
+            <div class="alert-danger" *ngIf="LastName.errors.required">שדה חובה</div>
+            <div class="alert-danger" *ngIf="LastName.errors.pattern">יש להזין אותיות בלבד</div>
+          </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="row-md-12">
+          <div class="form-group">
+              <label  class="control-label">Phone number*</label>
+              <!-- בדיקת תקינות לטלפון - מספרים בלבד עד 10 ספרות, ושדה חובה -->
+              <input [(ngModel)]="userAdministrator.phoneNumber" type="text" name="phoneNumber" class="form-control" #PhoneNumber="ngModel" required minlength="9" maxlength="10" pattern="[0-9 ]*"/>
+              <div class="alert-danger" *ngIf="PhoneNumber.invalid && (PhoneNumber.dirty || PhoneNumber.touched)" >
+                <div class="alert-danger" *ngIf="PhoneNumber.errors.required">שדה חובה</div>
+                <div class="alert-danger" *ngIf="PhoneNumber.errors.pattern">יש להזין ספרות בלבד</div>
+                <div class="alert-danger" *ngIf="PhoneNumber.errors.minlength">יש להכניס לפחות 9 ספרות</div>
+                <div class="alert-danger" *ngIf="PhoneNumber.errors.maxlength">יש להכניס מקסימום 10 ספרות</div>
+              </div>
+              </div>
+            </div>
+  
+  
+            <div class="row-md-12">
+              <div class="form-group">
+                  <label  class="control-label">Email*</label>
+                  <!-- בדיקת תקינות לכתובת מייל -שדה חובה -->
+                  <input [(ngModel)]="userAdministrator.email" type="text" name="email" class="form-control" #Email="ngModel" required pattern="([0-9a-zA-Z]([_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$"/>
+                  <div class="alert-danger" *ngIf="Email.invalid && (Email.dirty || Email.touched)" >
+                      <div class="alert-danger" *ngIf="Email.errors.required">שדה חובה</div>
+                      <div class="alert-danger" *ngIf="Email.errors.pattern">כתובת שגויה</div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="text-right">
+                    <input  type="submit" class="btn btn-primary" value="register" [disabled]="!formRegister.form.valid"  (click)="userRegister()">
+                    <button class="btn btn-primary" (click)="cancle()" >Cancel</button>
+                    </div>
+              
+      </form>
+      
+      </div>
+      </div>
+       </div>
+       
+  
+</div>
+
+</div>
+
+
+<h1>Group Details</h1>
+
+<div >
+  <div class="row">
+    <div class="col-md-6">
+    <div class="well">
+    <form (ngSubmit)="formGroup.reset()" #formGroup="ngForm" >
+
+<div class="row-md-12">
+  <div class="form-group">
+  <label  class="control-label">Group Name*</label>
+  <!-- בדיקת תקינות לשם קבוצה - אותיות בלבד, ושדה חובה -->
+  <input [(ngModel)]="group.groupName" type="text" name="groupName" class="form-control" #Name="ngModel" required pattern="[A-Za-zא-ת1-9 ]*"/>
+  <div class="alert-danger" *ngIf="Name.invalid && (Name.dirty || Name.touched)" >
+    <div class="alert-danger" *ngIf="Name.errors.required">שדה חובה</div>
+    <div class="alert-danger" *ngIf="Name.errors.pattern">invalid syntex</div>
+
+  </div>
+  </div>
+</div>
+
+<div class="row-md-12">
+  <div class="form-group">
+      <label  class="control-label">maxPriceForHour</label>
+      <!-- בדיקת תקינות למחיר גג - מספרים בלבד, ושדה חובה -->
+      <input [(ngModel)]="group.maxPriceForHour" type="text" name="maxPriceForHour" class="form-control" #MaxPriceForHour="ngModel" maxlength="2"  pattern="[0-9 ]*"/>
+      <div class="alert-danger" *ngIf="MaxPriceForHour.invalid && (MaxPriceForHour.dirty || MaxPriceForHour.touched)" >
+        <div class="alert-danger" *ngIf="MaxPriceForHour.errors.pattern">יש להזין ספרות בלבד</div>
+        <div class="alert-danger" *ngIf="MaxPriceForHour.errors.maxlength">יש להכניס מקסימום 2 ספרות</div> 
+      </div>
+      </div>
+    </div>
+    <div class="text-right">
+      <input  type="submit" class="btn btn-primary" value="OK" [disabled]="!formGroup.form.valid||!UserService.currentUser"  (click)="openGroup()">
+      <button class="btn btn-primary" (click)="cancle()" >Cancel</button>
+      </div>
+
+  </form>
+      
+</div>
+</div>
+ </div>
+ 
+
+</div>

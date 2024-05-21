@@ -1,0 +1,23 @@
+.myRow{
+    width: 100%;
+    align-self: center;
+   height: 60%;
+    padding: 14px 20px;
+    cursor: pointer;
+    color: black;
+    border: 2px solid  #9ef0b6;
+}
+
+.custom .ui-scrollpanel-wrapper {
+    border-right: 9px solid #f4f4f4; 
+}
+
+.custom .ui-scrollpanel-bar {
+    background-color: #1976d2; 
+    opacity: 1; 
+    transition: background-color .3s; 
+}
+
+.custom .ui-scrollpanel-bar:hover {
+    background-color: #135ba1;
+}

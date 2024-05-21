@@ -1,0 +1,92 @@
+
+  <div class="row-md-10">
+
+          <div class="col-md-2">
+          
+              <label  class="control-label">Start date</label>
+              <input [(ngModel)]="myOrder.startDate" type="date" name="startDate" class="form-control"  />
+           
+          </div>
+  
+  
+         <div class="col-md-2">
+          
+            <label class="control-label">End date</label>
+            <input [(ngModel)]="myOrder.endDate" type="date" name="endDate" class="form-control"/>
+            
+         </div>
+  
+         <div class="col-md-3">
+       
+            <label class="control-label">Start hour</label>
+          <div>
+            <div class="col-md-4">
+                 <input [(ngModel)]="startHour" type="number" name="startHour" class="form-control" placeholder="00"   />
+            </div>
+            <div class="col-md-1"> :</div>
+            <div class="col-md-4">
+                 <input [(ngModel)]="startMinute" type="number" name="startMinute" class="form-control"placeholder="00"  />
+            </div>
+          </div>
+        </div>
+            <!--שעת סיום-->
+            <div class="col-md-3">  
+              <label class="control-label">End hour</label>
+              <div>
+              <div class="col-md-4">
+                <input [(ngModel)]="endHour" type="number" name="endHour" class="form-control" placeholder="00" />
+              </div>
+              <div class="col-md-1">  :</div>
+              <div class="col-md-4">
+                <input [(ngModel)]="endMinute" type="number" name="endMinute" class="form-control"  placeholder="00"    />
+              </div>
+             </div>
+            </div> 
+        
+            <div class="col-md-1">
+           
+              <label  class="control-label">Number of hours</label>
+              <input [(ngModel)]="myOrder.numHours" type="number" name="numHours" class="form-control" />
+              
+          
+         </div>
+
+         <div class="col-md-1">
+           
+              <label  class="control-label">Number of seats</label>
+              <input [(ngModel)]="myOrder.numseats" type="number" name="numseats" class="form-control" />
+              
+          
+         </div>
+
+
+          
+</div>
+       
+<div class="row-md-10">
+       <input  type="submit" class="btn btn-primary" value="search" (click)="search()">
+       <button class="btn btn-primary"  >Cancel</button>
+             
+ </div>
+ <div class="alert alert-info">
+  <strong>Search result list</strong>
+</div>
+  <p-scrollPanel [style]="{width: '100%', height: '300px'}"> 
+
+ <div *ngFor="let rent of this.orderService.disposableRents">
+  <app-disposable-rent-ditails [disposableRent]="rent" status="ordering"></app-disposable-rent-ditails>
+</div>
+
+<div *ngFor="let rent of this.orderService.constantRents">
+  <app-constant-rent-ditails [constantRent]="rent" status="ordering"></app-constant-rent-ditails>
+</div> 
+</p-scrollPanel>
+<div class="alert alert-info">
+  <strong>Your orders list</strong>
+</div>
+
+<p-scrollPanel [style]="{width: '100%', height: '300px'}"> 
+<div *ngFor="let o of this.orderService.userOrders">
+<app-order-ditails [Order]=o></app-order-ditails>
+</div>
+</p-scrollPanel>

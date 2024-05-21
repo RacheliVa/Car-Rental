@@ -1,0 +1,248 @@
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\ApplicationInsights.config
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\csc.exe
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\System.Collections.Immutable.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\System.Reflection.Metadata.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\vbc.exe
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe.config
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\webAPI.dll.config
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\webAPI.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\webAPI.pdb
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.AI.Agent.Intercept.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.AI.DependencyCollector.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.AI.Web.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.AI.WindowsServer.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.ApplicationInsights.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Newtonsoft.Json.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\System.Net.Http.Formatting.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\System.Web.Http.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\System.Web.Http.WebHost.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.AI.DependencyCollector.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.AI.Web.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.AI.WindowsServer.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.ApplicationInsights.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\Newtonsoft.Json.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\System.Net.Http.Formatting.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\System.Web.Http.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\bin\System.Web.Http.WebHost.xml
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\obj\Debug\webAPI.csprojResolveAssemblyReference.cache
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\obj\Debug\webAPI.dll
+G:\B\G1\C#\בת שבע ורחלי\פרוייקט גמר\webAPI\webAPI\obj\Debug\webAPI.pdb
+D:\בת שבע ורחלי\webAPI\webAPI\bin\ApplicationInsights.config
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\csc.exe
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\vbc.exe
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe
+D:\בת שבע ורחלי\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\בת שבע ורחלי\webAPI\webAPI\bin\webAPI.dll.config
+D:\בת שבע ורחלי\webAPI\webAPI\bin\webAPI.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\webAPI.pdb
+D:\בת שבע ורחלי\webAPI\webAPI\bin\bll.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\dal.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\DTOcars.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\EntityFramework.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\EntityFramework.SqlServer.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.AI.Web.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.ApplicationInsights.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Newtonsoft.Json.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Net.Http.Formatting.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Http.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Http.WebHost.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\bll.pdb
+D:\בת שבע ורחלי\webAPI\webAPI\bin\DTOcars.pdb
+D:\בת שבע ורחלי\webAPI\webAPI\bin\dal.pdb
+D:\בת שבע ורחלי\webAPI\webAPI\bin\EntityFramework.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\EntityFramework.SqlServer.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.AI.Web.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.ApplicationInsights.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Newtonsoft.Json.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Net.Http.Formatting.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Http.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Http.WebHost.xml
+D:\בת שבע ורחלי\webAPI\webAPI\obj\Debug\webAPI.csprojResolveAssemblyReference.cache
+D:\בת שבע ורחלי\webAPI\webAPI\obj\Debug\webAPI.dll
+D:\בת שבע ורחלי\webAPI\webAPI\obj\Debug\webAPI.pdb
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Antlr3.Runtime.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Helpers.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Mvc.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Optimization.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Razor.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.WebPages.Deployment.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.WebPages.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.WebPages.Razor.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\WebGrease.dll
+D:\בת שבע ורחלי\webAPI\webAPI\bin\Antlr3.Runtime.pdb
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Helpers.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Mvc.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Optimization.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.Razor.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.WebPages.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.WebPages.Deployment.xml
+D:\בת שבע ורחלי\webAPI\webAPI\bin\System.Web.WebPages.Razor.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\ApplicationInsights.config
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\csc.exe
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\vbc.exe
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\webAPI.dll.config
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\webAPI.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\webAPI.pdb
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Antlr3.Runtime.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\bll.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\dal.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\DTOcars.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\EntityFramework.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\EntityFramework.SqlServer.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.Agent.Intercept.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.DependencyCollector.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.Web.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.WindowsServer.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.ApplicationInsights.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.Web.Infrastructure.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Newtonsoft.Json.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Net.Http.Formatting.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Helpers.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Http.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Http.WebHost.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Mvc.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Optimization.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Razor.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.Deployment.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.Razor.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\WebGrease.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\bll.pdb
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\DTOcars.pdb
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Antlr3.Runtime.pdb
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\dal.pdb
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\EntityFramework.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\EntityFramework.SqlServer.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.DependencyCollector.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.Web.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.WindowsServer.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.ApplicationInsights.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Helpers.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Mvc.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Optimization.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Razor.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.Deployment.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.Razor.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Newtonsoft.Json.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Net.Http.Formatting.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Http.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Http.WebHost.xml
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\obj\Debug\webAPI.csprojResolveAssemblyReference.cache
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\obj\Debug\webAPI.dll
+E:\פרויקט מעודכן יט תמוז\webAPI\webAPI\obj\Debug\webAPI.pdb
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\ApplicationInsights.config
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\csc.exe
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\System.Collections.Immutable.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\System.Reflection.Metadata.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\vbc.exe
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe.config
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\webAPI.dll.config
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\webAPI.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\webAPI.pdb
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Antlr3.Runtime.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\bll.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\dal.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\DTOcars.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\EntityFramework.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\EntityFramework.SqlServer.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.Agent.Intercept.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.DependencyCollector.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.Web.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.WindowsServer.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.ApplicationInsights.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.Web.Infrastructure.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Newtonsoft.Json.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Net.Http.Formatting.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Helpers.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Http.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Http.WebHost.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Mvc.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Optimization.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Razor.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.Deployment.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.Razor.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\WebGrease.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\bll.pdb
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\DTOcars.pdb
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Antlr3.Runtime.pdb
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\dal.pdb
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\EntityFramework.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\EntityFramework.SqlServer.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.DependencyCollector.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.Web.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.AI.WindowsServer.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.ApplicationInsights.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Helpers.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Mvc.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Optimization.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Razor.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.Deployment.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.WebPages.Razor.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\Newtonsoft.Json.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Net.Http.Formatting.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Http.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\bin\System.Web.Http.WebHost.xml
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\obj\Debug\webAPI.csprojResolveAssemblyReference.cache
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\obj\Debug\webAPI.dll
+F:\פרויקט מעודכן יט תמוז\webAPI\webAPI\obj\Debug\webAPI.pdb

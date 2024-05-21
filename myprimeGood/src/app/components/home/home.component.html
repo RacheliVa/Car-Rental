@@ -1,0 +1,33 @@
+
+<html>
+ 
+ 
+<body>
+   
+      <div class="col-md-2 myCol" >
+          <ul class="nav nav-pills nav-stacked">
+           
+            <li><a input type="button" class="myButton" (click)="popLogin('open')" value="Enter">Enter</a></li>
+            <li><a input type="button" class="myButton" (click)="popRegister('open')" value="Register">Register</a></li>
+           
+          </ul>
+        </div>
+   <div class="row">
+     <div class="col-md-2"></div>
+     <div class="col-md-8">
+  <p-galleria [images]="images" panelWidth="100%" panelHeight="600" [showCaption]="true"></p-galleria>
+</div>
+  </div>
+</body>
+</html>
+
+  <div id="popLogin" class="modal animate" action="/action_page.php">
+                <app-login > </app-login> 
+             </div>
+  <div id="popRegister" class="modal animate" action="/action_page.php">
+               <app-register></app-register>
+            </div>
+            
+     
+
+   

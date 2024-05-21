@@ -1,0 +1,35 @@
+<div class="myRow">              
+<div class="row">
+
+  <div  *ngIf="!status" class="col-md-1">carID</div> 
+  <div class="col-md-1">gas</div>
+  <div class="col-md-1">location</div>
+  <div  class="col-md-1">state</div>
+  <div class="col-md-1">dateFrom</div>
+  <div class="col-md-1">dateTo</div>
+  <div class="col-md-1">hourFrom</div>
+  <div class="col-md-1">hourTo</div>
+  <div class="col-md-1">minPercentageForRent</div>
+
+</div>
+
+<div class="row">
+  <div *ngIf="!status" class="col-md-1">{{disposableRent.carID}}</div>
+  <div class="col-md-1">{{disposableRent.gas}}</div>
+  <div class="col-md-1">{{disposableRent.location}}</div>
+  <div   class="col-md-1">{{disposableRent.state}}</div>
+  <div class="col-md-1">{{disposableRent.dateFrom}}</div>
+  <div class="col-md-1">{{disposableRent.dateTo}}</div>
+  <div class="col-md-1">{{disposableRent.hourFrom}}</div>
+  <div class="col-md-1">{{disposableRent.hourTo}}</div>
+  <div class="col-md-1">{{disposableRent.minPercentageForRent}}</div>
+  <div *ngIf="status === 'ordering'">
+    <input type="button" value="Car Details" (click)=" isShowCarDetails=!isShowCarDetails;showCarDetails()"/>
+    
+  </div>
+</div>
+
+<div *ngIf="isShowCarDetails">
+  <app-car-ditails [Car]=car status="ordering"></app-car-ditails>
+</div>
+</div>  

@@ -1,0 +1,36 @@
+<div >
+  <div class="row">
+    <div  class="col-md-3"></div>
+    <div class="col-md-6">
+    <div class="well">
+    <form #formNewPerson="ngForm" >
+    <div class="form-group">
+    <label  class="control-label">User Name</label>
+    <!-- בדיקת תקינות לשם משתמש - אותיות בלבד, ושדה חובה -->
+    <input [(ngModel)]="userName" type="text" name="userName" class="form-control" #Name="ngModel" required pattern="[A-Za-zא-ת ]*"/>
+    <div class="alert-danger" *ngIf="Name.invalid && (Name.dirty || Name.touched)" >
+      <div class="alert-danger" *ngIf="Name.errors.required">שדה חובה</div>
+      <div class="alert-danger" *ngIf="Name.errors.pattern">יש להזין אותיות בלבד</div>
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="control-label">Password</label>
+      <!-- בדיקת תקינות לסיסמא - 6 תוים, ושדה חובה -->
+    <input [(ngModel)]="password" type="password" name="password" class="form-control" #Password="ngModel"  required minlength="6"/>
+    <div class="alert-danger" *ngIf="Password.invalid && (Password.dirty || Password.touched)" >
+      <div class="alert-danger" *ngIf="Password.errors.required">שדה חובה</div>
+      <div class="alert-danger" *ngIf="Password.errors.minlength">יש להכניס לפחות 6 תוים</div>
+    </div>
+    </div>
+   
+    <div class="text-right">
+    <input  type="submit" class="btn btn-primary" value="Login" [disabled]="!formNewPerson.form.valid" (click)="Login()">
+    <button class="btn btn-primary" (click)="this.UsersServer.pop('close','popLogin')" >Cancel</button>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     </div>
+     
+    

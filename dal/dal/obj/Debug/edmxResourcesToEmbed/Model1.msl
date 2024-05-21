@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BRcarProjectModelStoreContainer" CdmEntityContainer="BRcarProjectEntities">
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="BRcarProjectModel.Cars">
+        <MappingFragment StoreEntitySet="Cars">
+          <ScalarProperty Name="carID" ColumnName="carID" />
+          <ScalarProperty Name="onerID" ColumnName="onerID" />
+          <ScalarProperty Name="yearProduce" ColumnName="yearProduce" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="numSeats" ColumnName="numSeats" />
+          <ScalarProperty Name="babySeat" ColumnName="babySeat" />
+          <ScalarProperty Name="priceForHour" ColumnName="priceForHour" />
+          <ScalarProperty Name="discription" ColumnName="discription" />
+          <ScalarProperty Name="handicappedCar" ColumnName="handicappedCar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="constantRent">
+      <EntityTypeMapping TypeName="BRcarProjectModel.constantRent">
+        <MappingFragment StoreEntitySet="constantRent">
+          <ScalarProperty Name="rentID" ColumnName="rentID" />
+          <ScalarProperty Name="carID" ColumnName="carID" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="hourFrom" ColumnName="hourFrom" />
+          <ScalarProperty Name="hourTo" ColumnName="hourTo" />
+          <ScalarProperty Name="daysID" ColumnName="daysID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="disposableRent">
+      <EntityTypeMapping TypeName="BRcarProjectModel.disposableRent">
+        <MappingFragment StoreEntitySet="disposableRent">
+          <ScalarProperty Name="rentID" ColumnName="rentID" />
+          <ScalarProperty Name="carID" ColumnName="carID" />
+          <ScalarProperty Name="gas" ColumnName="gas" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="dateFrom" ColumnName="dateFrom" />
+          <ScalarProperty Name="dateTo" ColumnName="dateTo" />
+          <ScalarProperty Name="hourFrom" ColumnName="hourFrom" />
+          <ScalarProperty Name="hourTo" ColumnName="hourTo" />
+          <ScalarProperty Name="minPercentageForRent" ColumnName="minPercentageForRent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="groupAtribution">
+      <EntityTypeMapping TypeName="BRcarProjectModel.groupAtribution">
+        <MappingFragment StoreEntitySet="groupAtribution">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="groupID" ColumnName="groupID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="BRcarProjectModel.Groups">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="groupID" ColumnName="groupID" />
+          <ScalarProperty Name="groupName" ColumnName="groupName" />
+          <ScalarProperty Name="groupManagerID" ColumnName="groupManagerID" />
+          <ScalarProperty Name="maxPriceForHour" ColumnName="maxPriceForHour" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginRequests">
+      <EntityTypeMapping TypeName="BRcarProjectModel.LoginRequests">
+        <MappingFragment StoreEntitySet="LoginRequests">
+          <ScalarProperty Name="requestID" ColumnName="requestID" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="groupName" ColumnName="groupName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NotAllowForUser">
+      <EntityTypeMapping TypeName="BRcarProjectModel.NotAllowForUser">
+        <MappingFragment StoreEntitySet="NotAllowForUser">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="notAllowUser" ColumnName="notAllowUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="BRcarProjectModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="startHour" ColumnName="startHour" />
+          <ScalarProperty Name="endHour" ColumnName="endHour" />
+          <ScalarProperty Name="numseats" ColumnName="numseats" />
+          <ScalarProperty Name="numHours" ColumnName="numHours" />
+          <ScalarProperty Name="rentID" ColumnName="rentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="BRcarProjectModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="administrator" ColumnName="administrator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

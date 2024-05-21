@@ -1,0 +1,114 @@
+
+
+<div class="myRow">
+<div *ngIf="!isUpdate&&Car" class="row">
+<!-- <div class="col-md-1 "> onerID: {{Car.onerID}}</div> -->
+<div  class="col-md-1 ">yearProduce: {{Car.yearProduce}}</div>
+<div class="col-md-1 ">  model: {{Car.model}}</div>
+<div class="col-md-1 ">  numSeats: {{Car.numSeats}}</div>
+<div class="col-md-1 "> babySeat:<input type="checkbox" checked={{Car.babySeat}}/>  </div>
+<div   class="col-md-2 ">  discription: {{Car.discription}}</div>
+<div   class="col-md-1 ">  handicappedCar:<input type="checkbox" checked={{Car.handicappedCar}} /> </div>
+
+<div  *ngIf="status!='manager'&& status != 'ordering'">
+
+  <!-- כפתור מחיקה לרכב קיים -->
+<div  class="col-md-1 ">
+  <!-- <div class="glyphicon glyphicon-user icon" ></div> -->
+  <input type="button" value="deleteMe" (click)="checkRentOfCar(Car)"/>
+</div>
+<div  class="col-md-1 ">
+  <!-- <i class="fa fa-car icon" ></i> -->
+  <input type="button" value="UpdateMe"(click)="isUpdate=true"/>
+</div>
+</div>
+<div  *ngIf="status==='manager'">
+
+<div  class="col-md-2 ">
+  <!-- <i class="fa fa-car icon" ></i> -->
+  <input type="button" value="rentings"(click)="showRentings(Car)"/>
+</div>
+</div>
+<div  *ngIf="status==='ordering'">
+
+    <div  class="col-md-2 ">
+      <!-- <i class="fa fa-car icon" ></i> -->
+      <input type="button" value="order" (click)="order()"/>
+    </div>
+    </div>
+</div>
+
+<div *ngIf="isShowCarRents">
+    <p-scrollPanel [style]="{width: '100%', height: '200px'}">
+      <div *ngFor="let rent of this.disposableRents">
+      <app-disposable-rent-ditails [disposableRent]="rent" ></app-disposable-rent-ditails>
+    </div>
+
+    <div *ngFor="let rent of this.constantRents">
+      <app-constant-rent-ditails [constantRent]="rent" ></app-constant-rent-ditails>
+    </div> 
+   </p-scrollPanel>
+  </div>
+<!-- תיבות להוספת רכב ולעדכון -->
+
+<div *ngIf="isUpdate||!Car" class="row ">
+<!-- <div class="col-md-1 ">onerID:<input [(ngModel)]="UpdateCar.onerID" type="text" /> </div> -->
+<div class="col-md-1 ">yearProduce:<input [(ngModel)]="UpdateCar.yearProduce" type="text"/> </div>
+<div class="col-md-1 ">model:<input [(ngModel)]="UpdateCar.model"  type="text"/></div>
+<div class="col-md-2 ">numSeats:<input  [(ngModel)]="UpdateCar.numSeats" type="text"  /></div>
+<div  class="col-md-1 ">babySeat:<input [(ngModel)]="UpdateCar.babySeat"  type="checkbox" /> </div>
+<div   class="col-md-2 ">discription: <input [(ngModel)]="UpdateCar.discription"  type="text"  /></div>
+<div   class="col-md-1 ">handicappedCar:<input [(ngModel)]="UpdateCar.handicappedCar"  type="checkbox" /></div>
+
+<!-- כפתורים עדכן וביטול לרכב קיים -->
+
+<div *ngIf="Car" class="col-md-1 ">
+  <!-- <div class="glyphicon glyphicon-user icon" ></div> -->
+  <input type="button" value="Update" (click)="updateCarDetails(UpdateCar)"/>
+</div>
+<div  *ngIf="Car"  class="col-md-1 ">
+  <!-- <i class="fa fa-car icon" ></i> -->
+  <input type="button" value="Cancle"(click)="isUpdate=false;cancleUpdateCar()"/>
+</div>
+
+<!-- כפתורים הוסף וביטול לרכב חדש -->
+
+<div  *ngIf="!isUpdate"  class="col-md-1 ">
+    <!-- <i class="fa fa-car icon" ></i> -->
+    <input type="button" value="Create"(click)="addCar()"/>
+  </div>
+  <div  *ngIf="!isUpdate"  class="col-md-1 ">
+      <!-- <i class="fa fa-car icon" ></i> -->
+      <input type="button" value="Cancle"(click)=" this.carService.isCreateCar=false"/>
+    </div>
+   
+</div>
+
+</div>
+
+
+
+
+<!-- <p-toast position="center" key="c" (onClose)="onReject()" [modal]="true" [baseZIndex]="5000">
+    <ng-template let-message pTemplate="message">
+        <div style="text-align: center">
+            <i class="pi pi-exclamation-triangle" style="font-size: 3em"></i>
+            <h3>{{message.summary}}</h3>
+            <p>{{message.detail}}</p>
+        </div>
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-6">
+                <button type="button" pButton (click)="onConfirm()" label="Yes" class="ui-button-success"></button>
+            </div>
+            <div class="ui-g-6">
+                <button type="button" pButton (click)="onReject()" label="No" class="ui-button-secondary"></button>
+            </div>
+        </div>
+    </ng-template>
+</p-toast> -->
+<div style="color: brown">
+    <div *ngFor="let rent of this.rentsOfCar">
+      <div *ngIf="rent.rentID%2==0"><app-disposable-rent-ditails [disposableRent]="rent"></app-disposable-rent-ditails></div>
+      <div *ngIf="rent.rentID%2==1"><app-constant-rent-ditails [constantRent]="rent"></app-constant-rent-ditails></div>
+    </div>
+</div>

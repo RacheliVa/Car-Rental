@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BRcarProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cars">
+    <Key>
+      <PropertyRef Name="carID" />
+    </Key>
+    <Property Name="carID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="onerID" Type="int" Nullable="false" />
+    <Property Name="yearProduce" Type="int" />
+    <Property Name="model" Type="varchar" MaxLength="20" />
+    <Property Name="numSeats" Type="int" />
+    <Property Name="babySeat" Type="bit" />
+    <Property Name="priceForHour" Type="int" />
+    <Property Name="discription" Type="varchar" MaxLength="50" />
+    <Property Name="handicappedCar" Type="bit" />
+  </EntityType>
+  <EntityType Name="constantRent">
+    <Key>
+      <PropertyRef Name="rentID" />
+    </Key>
+    <Property Name="rentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="carID" Type="int" />
+    <Property Name="location" Type="varchar" MaxLength="50" />
+    <Property Name="state" Type="int" />
+    <Property Name="hourFrom" Type="varchar" MaxLength="10" />
+    <Property Name="hourTo" Type="varchar" MaxLength="10" />
+    <Property Name="daysID" Type="int" />
+  </EntityType>
+  <EntityType Name="disposableRent">
+    <Key>
+      <PropertyRef Name="rentID" />
+    </Key>
+    <Property Name="rentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="carID" Type="int" />
+    <Property Name="gas" Type="bit" />
+    <Property Name="location" Type="varchar" MaxLength="50" />
+    <Property Name="state" Type="int" />
+    <Property Name="dateFrom" Type="date" />
+    <Property Name="dateTo" Type="date" />
+    <Property Name="hourFrom" Type="varchar" MaxLength="10" />
+    <Property Name="hourTo" Type="varchar" MaxLength="10" />
+    <Property Name="minPercentageForRent" Type="int" />
+  </EntityType>
+  <EntityType Name="groupAtribution">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="groupID" Type="int" />
+    <Property Name="userID" Type="int" />
+  </EntityType>
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="groupID" />
+    </Key>
+    <Property Name="groupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="groupName" Type="varchar" MaxLength="20" />
+    <Property Name="groupManagerID" Type="int" />
+    <Property Name="maxPriceForHour" Type="int" />
+  </EntityType>
+  <EntityType Name="LoginRequests">
+    <Key>
+      <PropertyRef Name="requestID" />
+    </Key>
+    <Property Name="requestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userName" Type="varchar" MaxLength="20" />
+    <Property Name="firstName" Type="varchar" MaxLength="20" />
+    <Property Name="lastName" Type="varchar" MaxLength="20" />
+    <Property Name="phoneNumber" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="20" />
+    <Property Name="groupName" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="NotAllowForUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userID" Type="int" />
+    <Property Name="notAllowUser" Type="int" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="orderID" />
+    </Key>
+    <Property Name="orderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userID" Type="int" />
+    <Property Name="startDate" Type="date" />
+    <Property Name="endDate" Type="date" />
+    <Property Name="startHour" Type="varchar" MaxLength="20" />
+    <Property Name="endHour" Type="varchar" MaxLength="20" />
+    <Property Name="numseats" Type="int" />
+    <Property Name="numHours" Type="int" />
+    <Property Name="rentID" Type="int" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userName" Type="varchar" MaxLength="20" />
+    <Property Name="firstName" Type="varchar" MaxLength="20" />
+    <Property Name="lastName" Type="varchar" MaxLength="20" />
+    <Property Name="phoneNumber" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="20" />
+    <Property Name="administrator" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_constantRent_Cars">
+    <End Role="Cars" Type="Self.Cars" Multiplicity="0..1" />
+    <End Role="constantRent" Type="Self.constantRent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cars">
+        <PropertyRef Name="carID" />
+      </Principal>
+      <Dependent Role="constantRent">
+        <PropertyRef Name="carID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_disposableRent_Cars">
+    <End Role="Cars" Type="Self.Cars" Multiplicity="0..1" />
+    <End Role="disposableRent" Type="Self.disposableRent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cars">
+        <PropertyRef Name="carID" />
+      </Principal>
+      <Dependent Role="disposableRent">
+        <PropertyRef Name="carID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_groupAtribution_Groups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="0..1" />
+    <End Role="groupAtribution" Type="Self.groupAtribution" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="groupID" />
+      </Principal>
+      <Dependent Role="groupAtribution">
+        <PropertyRef Name="groupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_groupAtribution_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="groupAtribution" Type="Self.groupAtribution" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="groupAtribution">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Groups_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="groupManagerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NotAllowForUser_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="NotAllowForUser" Type="Self.NotAllowForUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="NotAllowForUser">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NotAllowForUser_Users1">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="NotAllowForUser" Type="Self.NotAllowForUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="NotAllowForUser">
+        <PropertyRef Name="notAllowUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BRcarProjectModelStoreContainer">
+    <EntitySet Name="Cars" EntityType="Self.Cars" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="constantRent" EntityType="Self.constantRent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="disposableRent" EntityType="Self.disposableRent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="groupAtribution" EntityType="Self.groupAtribution" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoginRequests" EntityType="Self.LoginRequests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NotAllowForUser" EntityType="Self.NotAllowForUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_constantRent_Cars" Association="Self.FK_constantRent_Cars">
+      <End Role="Cars" EntitySet="Cars" />
+      <End Role="constantRent" EntitySet="constantRent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_disposableRent_Cars" Association="Self.FK_disposableRent_Cars">
+      <End Role="Cars" EntitySet="Cars" />
+      <End Role="disposableRent" EntitySet="disposableRent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_groupAtribution_Groups" Association="Self.FK_groupAtribution_Groups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="groupAtribution" EntitySet="groupAtribution" />
+    </AssociationSet>
+    <AssociationSet Name="FK_groupAtribution_Users" Association="Self.FK_groupAtribution_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="groupAtribution" EntitySet="groupAtribution" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Groups_Users" Association="Self.FK_Groups_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NotAllowForUser_Users" Association="Self.FK_NotAllowForUser_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="NotAllowForUser" EntitySet="NotAllowForUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NotAllowForUser_Users1" Association="Self.FK_NotAllowForUser_Users1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="NotAllowForUser" EntitySet="NotAllowForUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Users" Association="Self.FK_Orders_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

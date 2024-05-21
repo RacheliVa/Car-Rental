@@ -1,0 +1,19 @@
+<!--ניהול קבוצה קיימת-->
+
+<div *ngIf="showOneGroup" >
+    <app-group-ditails [group]="this.GroupsService.groups[0]"></app-group-ditails>
+    </div>
+<div *ngIf="showGroupsButtons" > 
+    <div class="row ">  
+         <div *ngFor="let g of this.GroupsService.groups" >
+                <div class="col-md-2 " style="margin: 30px">
+                   <button  type="button" class="btn btn-success" (click)="showGroup(g)">{{g.groupName}}</button>
+                </div>
+              
+        </div>   
+    </div>
+
+</div>  
+<div *ngIf="showCurrentGroup"> 
+      <app-group-ditails [group]="currentGroup"></app-group-ditails>
+ </div>

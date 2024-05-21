@@ -1,0 +1,24 @@
+<div class="myRow">
+<div class="row">
+  <div class="col-md-2">userName</div>
+  <div class="col-md-2">Name</div> 
+  <div class="col-md-2">phoneNumber</div>
+  <div class="col-md-2">email</div>
+  <div class="col-md-2">password</div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">{{request.userName}}</div>
+  <div class="col-md-2">{{request.firstName}} {{request.lastName}}</div>
+  <div class="col-md-2">{{request.phoneNumber}}</div>
+  <div class="col-md-2">{{request.email}}</div>
+  <div class="col-md-2">{{request.password}}</div>
+  <div class="col-md-1">
+    <input type="button" value="commit" (click)="comitUser()"/>
+  </div>
+  <div class="col-md-1">
+    <input type="button" value="cancle" (click)="cancleComitUser()"/>
+  </div>
+</div>
+</div>
+

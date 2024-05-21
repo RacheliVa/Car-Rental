@@ -1,0 +1,236 @@
+<!-- כפתורים לפתיחת הדיו המתאים -->
+<div *ngIf="isShowButton" >
+<input type="button" value="disposable rent" (click)="isShowButton=false;isDis=true"/>
+<input type="button" value="constant rent" (click)="isShowButton=false;isCons=true"/>
+</div>
+
+<!-- טפסים למילוי פרטי השכרה חדשה -->
+<!-- השכרה חד פעמית -->
+
+
+<div *ngIf="isDis" >
+  <div class="row">
+    <div class="col-md-6">
+    <div class="well">
+    <form (ngSubmit)="formDisposableRent.reset()" #formDisposableRent="ngForm" >
+
+
+<!--בחירת רכב להשכרה-->
+<div class="row-md-12">
+  <div class="form-group">
+   <label  class="control-label">car*</label>
+  <div>
+   <select [(ngModel)]="currentDisposableRent.carID" class="form-control" name="carID"  required>
+  <option *ngFor="let car of carService.userCars"   [value]="car.carID">Year Produce: {{car.yearProduce}} Model: {{car.model}}</option>
+</select>
+</div>
+</div>
+</div>
+
+
+<!--מיקום-->
+<div class="row-md-12">
+    <div class="form-group">
+    <label  class="control-label">location</label>
+    <input [(ngModel)]="currentDisposableRent.location" type="text" name="location" class="form-control" #location="ngModel"  />
+    </div>
+  </div>
+
+
+  <!--תאריך התחלה-->
+<div class="row-md-12">
+  <div class="col-md-6">
+    <div class="form-group">
+    <label class="control-label">dateFrom*</label>
+      <!-- בדיקת תקינות לתאריך -צריך לבדוק איך- שדה חובה -->
+    <input [(ngModel)]="currentDisposableRent.dateFrom" type="date" name="dateFrom" class="form-control" #DateFrom="ngModel" required />
+    </div>
+   </div>
+
+<!--תאריך סיום-->
+   <div class="col-md-6">
+    <div class="form-group">
+    <label class="control-label">dateTo*</label>
+      <!-- בדיקת תקינות לתאריך -צריך לבדוק איך- שדה חובה -->
+    <input [(ngModel)]="currentDisposableRent.dateTo" type="date" name="dateTo" class="form-control" #DateTo="ngModel"  required />
+    </div>
+   </div>
+  </div>
+
+
+
+<!--שעת התחלה-->
+  <div class="row-md-12">
+    <div class="form-group">
+  <label class="control-label">hour from*</label>
+  <div class="col-md-2">
+<input [(ngModel)]="hourFrom" type="number" name="hourFrom" class="form-control" #HourFromhours="ngModel" placeholder="00"  pattern="[0-9]*" required />
+</div>
+<div class="col-md-1">
+   :
+    </div>
+    <div class="col-md-2">
+        <input [(ngModel)]="minuteFrom" type="number" name="minuteFrom" class="form-control" #HourFromminutes="ngModel" placeholder="00"   pattern="[0-9]*" required />
+        </div></div>
+        <div class="form-group">
+
+
+          <!--שעת סיום-->
+            <label class="control-label">hour to*</label>
+            <div class="col-md-2">
+          <input [(ngModel)]="hourTo" type="number" name="hourTo" class="form-control" #HourTohours="ngModel" placeholder="00"   pattern="[0-9]*" required />
+          </div>
+          <div class="col-md-1">
+             :
+              </div>
+              <div class="col-md-2">
+                  <input [(ngModel)]="minuteTo" type="number" name="minuteTo" class="form-control" #HourTominutes="ngModel" placeholder="00"   pattern="[0-9]*" required />
+                  </div>
+              </div>
+</div>
+
+
+<!--אחוז השכרה מינימלי-->
+   <div class="row-md-12">
+    <div class="form-group">
+    <label  class="control-label">minPercentageForRent</label>
+    <!-- בדיקת תקינות לערך המספר - לבדוק -->
+    <input [(ngModel)]="currentDisposableRent.minPercentageForRent" type="number" name="minPercentageForRent" class="form-control" #MinPercentageForRent="ngModel" value="50" pattern="[0-9]*" />
+    <div class="alert-danger" *ngIf="MinPercentageForRent.invalid && (MinPercentageForRent.dirty || MinPercentageForRent.touched)" >
+      <div class="alert-danger" *ngIf="MinPercentageForRent.errors.pattern">מספר אחוזים לא תקין</div>
+    </div>
+    </div>
+  </div>
+   
+<!--דלק-->
+<div class="row-md-12">
+  <div class="col-md-3"> 
+  <div class="form-group">
+    <label  class="control-label">gas</label>
+    <input type="checkbox" [(ngModel)]="currentDisposableRent.gas" class="form-control" name="gas"  #Gas="ngModel"  />
+    </div>
+  </div> 
+  </div>
+
+            
+    <div class="text-right">
+    <input  type="submit" class="btn btn-primary" value="add" [disabled]="!formDisposableRent.form.valid"  (click)="isShowButton=true;isDis=false;isCons=false;addDis()">
+    <button class="btn btn-primary" (click)="isShowButton=true;this.isDis=false;this.isCons=false;closePop()" >Cancel</button>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     </div>
+     
+
+
+
+
+<!-- השכרה קבועה -->
+
+     <div *ngIf="isCons" >
+      <div class="row">
+        <div class="col-md-6">
+        <div class="well">
+        <form (ngSubmit)="formConstantRent.reset()" #formConstantRent="ngForm" >
+    
+
+          <!--בחירת רכב-->
+    <div class="row-md-12">
+      <div class="form-group">
+       <label  class="control-label">car*</label>
+      <div>
+       <select [(ngModel)]="currentConstantRent.carID" class="form-control" name="carID"  required>
+      <option *ngFor="let car of carService.userCars"   [value]="car.carID">Year Produce: {{car.yearProduce}} Model: {{car.model}}</option>
+    </select>
+    </div>
+    </div>
+    </div>
+    
+
+    <!--מיקום-->
+    <div class="row-md-12">
+        <div class="form-group">
+        <label  class="control-label">location</label>
+        <input [(ngModel)]="currentConstantRent.location" type="text" name="location" class="form-control" #location="ngModel"  />
+        </div>
+      </div>
+    
+
+     <!--בחירת ימים בשבוע-->
+      <div class="row-md-12">
+        <div class="form-group">
+         <label  class="control-label">Days in week*</label>
+        <div>
+         <select [(ngModel)]="currentConstantRent.daysID" class="form-control" name="DaysID"  required>
+        <option *ngFor="let numDay of ListNumDays" value="{{numDay}}">{{numDay|daysOption}}</option>
+      </select>
+      </div>
+      </div>
+      </div>
+   
+    
+    <!--שעת התחלה-->
+  <div class="row-md-12">
+      <div class="form-group">
+    <label class="control-label">hour from*</label>
+    <div class="col-md-2">
+  <input [(ngModel)]="hourFrom" type="number" name="hourFrom" class="form-control" #HourFromhours="ngModel" placeholder="00" pattern="[0-9]*" required/>
+  </div>
+  <div class="col-md-1">
+     :
+      </div>
+      <div class="col-md-2">
+          <input [(ngModel)]="minuteFrom" type="number" name="minuteFrom" class="form-control" #HourFromminutes="ngModel" placeholder="00" pattern="[0-9]*" required/>
+          </div></div>
+          <div class="form-group">
+  
+  
+   <!--שעת סיום-->
+    <label class="control-label">hour to*</label>
+    <div class="col-md-2">
+     <input [(ngModel)]="hourTo" type="number" name="hourTo" class="form-control" #HourTohours="ngModel" placeholder="00"  pattern="[0-9]*" required/>
+      </div>
+        <div class="col-md-1">
+          :
+          </div>
+           <div class="col-md-2">
+            <input [(ngModel)]="minuteTo" type="number" name="minuteTo" class="form-control" #HourTominutes="ngModel" placeholder="00"  pattern="[0-9]*" required/>
+    </div>
+  </div>
+  </div>
+    
+    
+    <!--אחוזי השכרה מינימליים-->
+       <div class="row-md-12">
+        <div class="form-group">
+        <label  class="control-label">minPercentageForRent</label>
+        <!-- בדיקת תקינות לערך המספר - לבדוק -->
+        <input [(ngModel)]="currentConstantRent.minPercentageForRent" type="number" name="minPercentageForRent" class="form-control" #MinPercentageForRent="ngModel" value="50" pattern="[0-9]*" />
+        <div class="alert-danger" *ngIf="MinPercentageForRent.invalid && (MinPercentageForRent.dirty || MinPercentageForRent.touched)" >
+          <div class="alert-danger" *ngIf="MinPercentageForRent.errors.pattern">מספר אחוזים לא תקין</div>
+        </div>
+        </div>
+      </div>
+       
+    <!--דלק-->
+    <div class="row-md-12">
+      <div class="col-md-3"> 
+      <div class="form-group">
+        <label  class="control-label">gas</label>
+        <input type="checkbox" [(ngModel)]="currentConstantRent.gas" class="form-control" name="gas"  #Gas="ngModel"/>
+        </div>
+      </div> 
+      </div>
+    
+                
+        <div class="text-right">
+        <input  type="submit" class="btn btn-primary" value="add" [disabled]="!formConstantRent.form.valid"  (click)="isShowButton=true;isDis=false;isCons=false;addCons()">
+        <button class="btn btn-primary" (click)="isShowButton=true;this.isDis=false;this.isCons=false;closePop()" >Cancel</button>
+        </div>
+        </form>
+        </div>
+        </div>
+        </div>
+         </div>

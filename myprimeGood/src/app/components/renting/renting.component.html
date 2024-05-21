@@ -1,0 +1,19 @@
+<!--פרטי משתמש-->
+
+<app-user-ditails [user]="UsersServer.currentUser"></app-user-ditails>
+<input type="button" value="add rent" (click)="popAddRent('open')">
+<div id="popAddRent" class="modal animate" action="/action_page.php">
+<app-add-rent></app-add-rent>
+</div>
+
+<div>
+        <!-- <p-scrollPanel [style]="{width: '100%', height: '200px'}">
+          <div *ngFor="let rent of this.disposableRents">
+          <app-disposable-rent-ditails [disposableRent]="rent" ></app-disposable-rent-ditails>
+        </div>
+    
+        <div *ngFor="let rent of this.constantRents">
+          <app-constant-rent-ditails [constantRent]="rent" ></app-constant-rent-ditails>
+        </div> 
+       </p-scrollPanel>
+      </div> -->

@@ -1,0 +1,19 @@
+
+    <body>
+        <button  class="button" (click)="popLogin('open')"  >enter</button>
+        <button  class="button"  (click)="popRegister('open')">register</button>
+        <button class="button"  (click)="openNewGroup()">open new group</button>
+        <div *ngIf="this.UsersServer.currentUser">
+        <button  class="button" (click)="renting()">renting</button> 
+        <button  class="button" (click)="ordering()">ordering</button> 
+        <button *ngIf="this.UsersServer.currentUser.administrator" class="button" (click)="managing()">managing</button> 
+    </div>
+        <div id="popLogin" class="modal animate" action="/action_page.php">
+           <app-login > </app-login> 
+        </div>
+        <div id="popRegister" class="modal animate" action="/action_page.php">
+          <app-register></app-register>
+       </div>
+      
+    </body>
+        

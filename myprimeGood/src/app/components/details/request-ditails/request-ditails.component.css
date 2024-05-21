@@ -1,0 +1,10 @@
+.myRow{
+    width: 100%;
+    align-self: center;
+    height: 50%;
+    padding: 14px 20px;
+    cursor: pointer;
+    color: black;
+    border: 2px solid #d3c599;
+}
+.myRow:hover {background-color: #d3c599;}
